@@ -1,0 +1,38 @@
+SIMPLE QUARTER SELECT PLUGIN
+
+Ever wanted a select component for Quaters of the Fiscal Year (Q1,Q2,Q3,Q4)? This simple plugin
+gives you that component and maps the select to the month of a datetime attribute.
+
+USAGE: 
+
+It's really easy to use.  Just toss this code into your view:
+<%= date_select(:some_model, :some_date_attribute, {:discard_day => true, :order => [:month,:year], :simple_quarter_select => true}) %>
+
+CONFIGURABILITY:
+
+Simple Quarter Select has a misleading name.  It actually should be called "Named Month Intervals" because that is exactly how the plugin works.  To illustrate this, let's look at an example. Let's say you want people to be able to choose from two halves of a year:
+
+<%= date_select(:some_model, :some_date_attribute, {:discard_day => true, :order => [:month,:year], :simple_quarter_select => true, :month_interval => 6, :interval_names => ["H1","H2"]}) %>
+
+This would display a select box with two options "H1" and "H2".  "H1" would store as 01/01/yyyy and "H2" would store as 07/01/yyyy.
+
+Or maybe you just want to display the full word "Quarter":
+<%= date_select(:some_model, :some_date_attribute, {:discard_day => true, :order => [:month,:year], :simple_quarter_select => true, :interval_names => ["Quarter 1","Quarter 2","Quarter 3","Quarter 4"]}) %>
+
+PHILOSOPHY:
+
+Why would you want to map the quarter to a datetime attribute?
+Well I think the answer is obvious but for the sake of being comprehensive, I'll list 3 questions to guide your decision:
+1) How else would you store the information in your database?
+2) What if some of your objects are quarterly but others can be actual dates? How about semiannual? 
+3) How would your sort-by-date query look?
+
+Feel free to send any questions to tonyamoyal@gmail.com
+
+Author: Tony Amoyal <tonyamoyal@gmail.com>
+
+Homepage:
+http://github.com/tamoyal/simple_quarter_select
+
+If you like this plugin, you might also like Simple Time Select:
+http://github.com/tamoyal/simple_time_select

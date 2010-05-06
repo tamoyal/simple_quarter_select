@@ -1,6 +1,6 @@
 author: Tony Amoyal
 summary: Provides a highly configurable quarter select component (Q1/Q2/Q3/Q4) 
-homepage: http://www.tonyamoyal.com
+homepage: http://www.tonyamoyal.com/2010/05/06/simple-quarter-select-rails-plugin-for-q1q2q3q4-selector/
 plugin: http://github.com/tamoyal/simple_quarter_select
 license: MIT
 version: 1.0.0

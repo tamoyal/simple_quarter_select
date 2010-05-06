@@ -3,6 +3,8 @@ SIMPLE QUARTER SELECT PLUGIN
 Ever wanted a select component for Quaters of the Fiscal Year (Q1,Q2,Q3,Q4)? This simple plugin
 gives you that component and maps the select to the month of a datetime attribute.
 
+A more user friendly description exists here: http://www.tonyamoyal.com/2010/05/06/simple-quarter-select-rails-plugin-for-q1q2q3q4-selector/
+
 USAGE: 
 
 It's really easy to use.  Just toss this code into your view:
@@ -31,8 +33,11 @@ Feel free to send any questions to tonyamoyal@gmail.com
 
 Author: Tony Amoyal <tonyamoyal@gmail.com>
 
-Homepage:
+Source:
 http://github.com/tamoyal/simple_quarter_select
+
+Home Page:
+http://www.tonyamoyal.com/2010/05/06/simple-quarter-select-rails-plugin-for-q1q2q3q4-selector/
 
 If you like this plugin, you might also like Simple Time Select:
 http://github.com/tamoyal/simple_time_select
